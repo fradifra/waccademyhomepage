@@ -201,3 +201,12 @@ sull'elemento mentor-info che è il blocchetto bianco sopra l'immagine del mento
 #banner-promo .col:hover {
     flex-grow: 3;
 }
+
+#navbar {
+    display: flex;
+}
+
+/* Stile per le colonne della navbar */
+#navbar .col {
+    flex: 1;
+}
