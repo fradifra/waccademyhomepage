@@ -1,0 +1,193 @@
+@authentic60 {
+    font-family: 'AUTHENTICSans-60';
+    src: url('fonts/AUTHENTICSans-60.woff2') format('woff2'),
+        url('AUTHENTICSans-60.woff') format('woff');
+    }
+
+@authentic90 {
+    font-family: 'AUTHENTICSans-90';
+    src: url('fonts/AUTHENTICSans-90.woff2') format('woff2'),
+        url('AUTHENTICSans-90.woff') format('woff');
+    }
+
+@authentic130 {
+    font-family: 'AUTHENTICSans-130';
+    src: url('fonts/AUTHENTICSans-130.woff2') format('woff2'),
+        url('AUTHENTICSans-130.woff') format('woff');
+    }
+
+@authentic150 {
+    font-family: 'AUTHENTICSans-150';
+    src: url('fonts/AUTHENTICSans-150.woff2') format('woff2'),
+        url('AUTHENTICSans-150.woff') format('woff');
+    }
+
+body {
+    background-color: #b0b0b0;
+    font-family: "AUTHENTICSans-90";
+    }
+.white {
+    background-color: #ffffff;
+    }
+.black {
+    background-color: #0F0E12;
+    }
+.grey {
+    background-color: #E5E5E5;
+    }
+.orange {
+    background-color: #F67C53;
+    }
+.green {
+    background-color: #0C7D4B;
+    }
+.yellow {
+    background-color: #FAFF2E;
+    }
+.blue {
+    background-color: #3388FF;
+    }
+.white-txt {
+    color: #ffffff;
+    }
+.black-txt {
+    color: #0F0E12;
+    }
+.grey-txt {
+    color: #E5E5E5;
+    }
+.orange-txt {
+    color: #F67C53;
+    }
+.green {
+    background-color: #0C7D4B;
+    }
+.yellow-txt {
+    color: #FAFF2E;
+    }
+.blue-txt {
+    color: #3388FF;
+    }
+.grey-txt-foot{
+    color: #868686
+}
+    
+.nav-text {
+    font-size: 20px;
+    }
+
+.btn-custom-navbar {
+    border: none;
+    background-color: transparent;
+    }
+    
+/* Personalizza la freccia del dropdown */
+.btn-custom::after {
+margin-left: 5px;
+color: orange; /* Colore della freccia */
+}
+
+.sezioni{
+    padding: 5px;
+}
+
+.btn-custom-orange {
+    background-color: #F67C53; /* Background color */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: 'AUTHENTICSans-60';
+    border-radius: 40px; /* Roundness of the button */
+    padding: 10px 20px; /* Padding */
+    }
+
+.btn-custom-orange:hover {
+    background-color: #f67c53bf; /* Background color */
+    }
+
+#banner-promo {
+    height: 690px;
+}
+
+.mentor-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/*Nel css posso creare classi annidate 
+.classe-elemento-padre .classe-elemento-figlio 
+sto definendo una classe che vale solo per un tag che si trova dentro ad un tag con la classe padre */
+.mentor-card .mentor-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(255, 255, 255, 1);
+    color: #0F0E12;
+}
+
+/*allo stesso modo posso creare delle azioni per queste classi annidate
+se scrivo .classe-elemento-padre .classe-elemento-figlio:nome-azione
+l'azione si attiva sull'elemento figlio e agisce sul'elemento figlio
+*/
+.mentor-card .mentor-info:hover {
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.3);
+    transition: opacity 0.3s ease,height 0.5s ease-in-out ;
+}
+
+#linkedin-card {
+    position: absolute;
+    bottom: 2%;
+    left: 85%;
+}
+
+.mentor-card .mentor-info .mentor-text{
+    color: rgb(255, 255, 255, 0)
+}
+
+
+/*allo stesso modo posso creare delle azioni per queste classi annidate
+se scrivo .classe-elemento-padre:azioni .classe-elemento-figlio
+l'azione si attiva sull'elemento padre e agisce sull'elemento figlio
+
+nel mio caso serviva fare hover sul blocchetto bianco delle info e fare in modo
+che il testo già presente però trasparente diventasse nero non trasparente
+questa azione qui sotto lo fa diventare nero non trasparente quando faccio hover
+sull'elemento mentor-info che è il blocchetto bianco sopra l'immagine del mentor
+*/
+
+.mentor-card .mentor-info:hover .mentor-text{
+    color: rgb(15, 14, 18, 1)
+}
+
+#video-alumni {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aggiunto per centrare verticalmente */
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100vh; /* Aggiunto per centrare verticalmente */
+}
+
+#btn-alumni{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center; /* Aggiunto per centrare verticalmente */
+}
+
+/* Personalizza l'aspetto dell'input nel form */
+.form-control {
+    background-color: rgba(255, 255, 255, 0.8); /* Imposta il colore di sfondo (meno opaco) */
+    border-radius: 0; /* Rendi i bordi quadrati */
+    color: #333; /* Cambia il colore del testo */
+}
+
+/* Personalizza il colore del testo del placeholder */
+.form-control::placeholder {
+    color: #999;
+}
