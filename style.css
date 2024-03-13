@@ -182,12 +182,22 @@ sull'elemento mentor-info che è il blocchetto bianco sopra l'immagine del mento
 
 /* Personalizza l'aspetto dell'input nel form */
 .form-control {
-    background-color: #0F0E12; /* Imposta il colore di sfondo */
+    background-color: rgba(255, 255, 255, 0.8); /* Imposta il colore di sfondo (meno opaco) */
     border-radius: 0; /* Rendi i bordi quadrati */
-    color: #ffffff; /* Cambia il colore del testo */
+    color: #333; /* Cambia il colore del testo */
 }
 
 /* Personalizza il colore del testo del placeholder */
 .form-control::placeholder {
     color: #999;
+}
+
+#banner-promo .col {
+    transition: flex-grow 0.5s ease;
+    flex-grow: 1;
+}
+
+/* Stile quando si passa il mouse su una colonna */
+#banner-promo .col:hover {
+    flex-grow: 3;
 }
